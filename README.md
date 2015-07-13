@@ -1,7 +1,8 @@
 #masonD
 
-# Ghost Theming Package
-# Modified for my personal ghost theme.
+## Ghost Theming Package
+## Modified for my personal ghost theme.
+from http://webdesign.tutsplus.com/series/building-a-ghost-theme-from-scratch--webdesign-16179
 
 ### Documentation
 
