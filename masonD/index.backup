@@ -1,0 +1,32 @@
+{{!< default}}
+
+{{#foreach posts}}
+
+<main class="main_masonD" role="main">
+
+<article class="article_masonD" role="article" itemscope itemtype="http://schema.org/Article">
+    <header class=postheader_masonD">
+        <time class="date_masonD" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished"> {{date format='dddd DD MMM YYYY'}}</time>
+        <h1 class="posttitle_masonD" itemprop="headline"><a href="{{{url}}}" rel="bookmark">
+                {{title}}
+        </a></h1>
+    </header>
+    <div class="postcontent_main" itemprop="articleBody">
+        {{content}}
+    </div>
+    {{#if tags}}
+    <div class="posttags_masonD">
+        Tags: {{tags separator=" | "}}
+    </div>
+    {{/if}}
+</article>
+{{/foreach}}
+
+
+{{#if pagination}}
+    <div class="pagination_masonD">
+        {{{pagination}}}
+    </div>
+{{/if}}
+
+</main>

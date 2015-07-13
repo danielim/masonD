@@ -1,0 +1,73 @@
+//**
+// Mixins
+//**
+
+body {
+    background-color: #CCC;
+}
+
+::selection {
+    background: @selectionbg;
+    color: @selectioncolor;
+}
+
+.masonBG {
+    background-color: #FFF;
+}
+
+.masontxt {
+    color: #333;
+}
+
+.headercolor {
+    color: #555;
+}
+
+.body_a_color {
+
+    .img_container_masonD:focus {
+        outline: solid;
+        color: @afocus;
+    }
+
+    a:focus {
+        outline: dashed;
+        color: @body_focus;
+    }
+
+    a:link,
+    a:visited {
+        color: @body_link;
+    }
+
+    a:focus {
+        outline: thin dashed;
+        color: @body_focus;
+    }
+
+    a:active,
+    a:hover {
+        outline: 0;
+        color: @body_hover;
+    }
+}
+
+.footer_a_color {
+
+    a:link,
+    a:visited {
+        color: @body_link;
+    }
+
+    a:focus {
+        outline: thin dashed;
+        color: @header_nav_focus;
+    }
+
+    a:active,
+    a:hover {
+        outline: 0;
+        color: @header_nav_hover;
+    }
+}
+

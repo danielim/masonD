@@ -1,0 +1,181 @@
+//**
+// Mixins
+//**
+
+.HeaderFont () {
+    font-family: @header_font;
+    line-height: 1.313em;
+
+}
+
+//**
+// Styles
+//**
+
+// Global
+
+body {
+    margin: 0;
+    font-family: @default_font;
+    line-height: @golden + 0em;
+}
+
+h1 {
+  .HeaderFont;
+  font-size: 3em;
+  margin: 0.513em 0;
+}
+ 
+h2 {
+  .HeaderFont;
+  font-size: 2.25em;
+  margin: 0.625em 0;
+}
+ 
+h3 {
+  .HeaderFont;
+  font-size: 1.5em;
+  margin: 1.313em 0;
+}
+ 
+h4 {
+  .HeaderFont;
+  font-size: 1.313em;
+  margin: 1.313em 0;
+}
+ 
+h5 {
+  .HeaderFont;
+  font-size: 1.125em;
+  margin: 1.313em 0;
+}
+ 
+h6 {
+  .HeaderFont;
+  font-size: 1em;
+  margin: 0.75em 0;
+}
+
+a { 
+    background: transparent;
+    text-decoration: none;
+}
+
+a:focus {
+    color: @afocus;
+}
+
+img a:focus {
+    color: @afocus;
+}
+
+//header styles
+
+.header_masonD {
+
+    a:link,
+    a:visited {
+        color: @header_nav;
+    }
+
+    a:focus {
+        outline: thin dashed;
+        color: @header_nav_focus;
+    }
+
+    a:active {
+        color: @header_nav_focus;
+    }
+    a:hover {
+        outline: 0;
+        color: @header_nav_focus;
+    }
+    .nav .nav-current a {
+        color: @header_nav_focus;
+    }
+
+
+    h1 {
+        .HeaderFont;
+        font-size: 1.5em;
+        a {
+        color: @header_title;
+        }
+    }
+    .blogdescription_masonD {
+        color: @header_desc;
+    }
+}
+
+// Masonry text.
+
+.masonPost_masonD {
+  .body_a_color;
+  .masontitle_masonD {
+    .HeaderFont;
+    font-size: 1.2em;
+    padding: 0.513em 0;
+  }
+
+  .date_masonD {
+    font-size: 0.8em;
+  }
+  .post-meta {
+    font-size: 0.8em;
+  }
+}
+
+
+.pagination_masonD {
+   .body_a_color;
+}
+
+// Footer text typography.
+
+.footertext_masonD {
+    padding: 1em;
+    color: @footertxt;
+    .footer_a_color;
+}
+
+// Subscription/ Social typography.
+
+
+.subscribe_masonD {
+    padding: 1em;
+    .ion-social-rss {
+    padding-right: 1em;
+    }
+    .footer_a_color;
+}
+
+.sharepost_masonD {
+    .body_a_color;
+
+    .share_masonD {
+        font-size: 1.2em;
+    }
+}
+
+// Page / Post.
+
+.article_masonD {
+    .body_a_color;
+}
+
+.hidethis_masonD {
+    display: none;
+}
+
+.pagetitle_masonD {
+    .HeaderFont;
+    font-size: 1.2em;
+    padding: 0.5em 0;
+}
+
+// code
+
+code {
+    font-size: 0.8em;
+    color: #333;
+}

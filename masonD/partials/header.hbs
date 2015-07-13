@@ -1,0 +1,16 @@
+<div class="header_masonD" role="banner">
+<span class="titlecontainer_masonD">
+{{#if @blog.logo}}<a class="logo_masonD" href="@blog.url"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+
+<h1 class="blogtitle_masonD">
+    <a title="{{@blog.title}}" href="{{@blog.url}}">{{{@blog.title}}}</a>
+</h1>
+
+<span class="blogdescription_masonD">
+    {{@blog.description}}
+</span>
+</span>
+<span class="nav_masonD">
+    {{navigation}}
+</span>
+</div>
