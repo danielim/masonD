@@ -1,5 +1,6 @@
 #masonD
 
+#status: [does not work properly yet]
 ## Ghost Theming Package
 ## Modified for my personal ghost theme.
 from http://webdesign.tutsplus.com/series/building-a-ghost-theme-from-scratch--webdesign-16179
