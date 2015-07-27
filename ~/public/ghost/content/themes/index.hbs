@@ -1,0 +1,50 @@
+{{!< default}}
+
+<main class="main_masonD" role="main">
+
+    {{!wrapper for the masonry}} 
+    <div class="masonry_masonD" itemscope itemtype="http://schema.org/CollectionPage">
+    {{#foreach posts}}
+    <div class="spacer_masonD"> 
+    <article class="masonPost_masonD" role="article" itemscope itemtype="http://schema.org/Article">
+                        {{#if image}}
+                        
+            <a class="img_container_masonD" href="{{{url}}}">
+                            <img src="{{image}}" alt="post image" />
+            </a>
+                        {{/if}}
+            
+                        {{#if image}}
+            <div class="excerpt_container_masonD hasimg_masonD">
+                {{else}}
+            <div class="excerpt_container_masonD">
+                {{/if}}
+                    <header class="masonheader_masonD"><h1 class="masontitle_masonD" itemprop="headline">
+                <a href="{{{url}}}">
+                        {{title}}
+                </a>
+                        
+                    </h1></header>
+                <p class="excerpt_masonD" itemprop="articleBody">
+                {{excerpt characters="120"}}&hellip; <a class="read-more" href="{{url}}">&raquo;</a></p> 
+                </p>
+            </div>
+            
+            <span class="post-meta_masonD">
+                <time class="date_masonD" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished"> <span>{{date published_at timeago="true"}}</span></time>
+                <!--{{#if tags}}on {{tags}}{{/if}} -->
+                <a class="disqusmason_masonD" href="{{url}}#disqus_thread" data-disqus-identifier="{{post.id}}">Comments</a>
+            </span>
+        </article>
+
+    </div> 
+    {{/foreach}} 
+    </div>
+
+{{#if pagination}}
+    <div class="pagination_masonD">
+        {{{pagination}}}
+    </div>
+{{/if}}
+
+</main>
