@@ -3,7 +3,7 @@
 //**
 
 body {
-    background-color: #CCC;
+    background-color: #DFDFDF;
 }
 
 ::selection {
@@ -23,10 +23,55 @@ body {
     color: #555;
 }
 
+.header_a_color {
+    .nav .nav-current {
+        a:link,
+        a:visited {
+            color: @header_nav_current;
+        }
+        a:hover {
+            outline: 0;
+            color: @header_nav_hover;
+        }
+        a:focus {
+            outline: thin dashed;
+            color: @header_nav_focus;
+            background-color: @header_nav_focusbg;
+        }
+    }
+
+    a:link,
+    a:visited {
+        color: @header_nav;
+    }
+
+    a:focus {
+        outline: thin dashed;
+        color: @header_nav_focus;
+        background-color: @header_nav_focusbg;
+    }
+
+    a:hover {
+        outline: 0;
+        color: @header_nav_hover;
+    }
+
+    a:active {
+        background-color: @header_nav_activebg;
+        color: @header_nav_active;
+    }
+
+}
+
 .body_a_color {
 
+    a:link,
+    a:visited {
+        color: @body_link;
+    }
+
     .img_container_masonD:focus {
-        outline: solid;
+        outline: none;
     }
 
     a:focus {
@@ -35,16 +80,16 @@ body {
         color: @body_focus;
     }
 
-    a:link,
-    a:visited {
-        color: @body_link;
-    }
-
-    a:active,
     a:hover {
         outline: 0;
         color: @body_hover;
     }
+
+    a:active {
+        background-color: @header_nav_activebg;
+        color: @header_nav_active;
+    }
+
 }
 
 .footer_a_color {
@@ -60,10 +105,15 @@ body {
         color: @footer_focus;
     }
 
-    a:active,
     a:hover {
         outline: 0;
         color: @footer_hover;
     }
+
+    a:active {
+        background-color: @footer_activebg;
+        color: @footer_active;
+    }
+
 }
 

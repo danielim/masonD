@@ -2,7 +2,8 @@
 // Typography vars
 //**
 
-@default_font: Quattrocento, Georgia, serif;
+//@default_font: Quattrocento, Georgia, serif;
+@default_font: "Source Sans Pro", "Open Sans", sans-serif;
 
 @header_font: Oswald, Arial, Helvetica, sans-serif;
 
@@ -23,7 +24,6 @@
 
 // Global
 
-@afocus: #FF6600;
 @selectionbg: #FF6600;
 @selectioncolor: #FFFFFF;
 // header
@@ -32,10 +32,12 @@
 @header_title: #F5F5F5;
 @header_desc: #BBB;
 @header_nav: #CCC;
-@header_nav_focus: @afocus;
-@header_nav_active: #FFFFFF;
-@header_nav_hover: @header_nav_active;
-
+@header_nav_current: #F60;
+@header_nav_active: #FFF;
+@header_nav_activebg: #555;
+@header_nav_hover: @header_nav_current;
+@header_nav_focus: @header_nav_active;
+@header_nav_focusbg: @selectionbg;
 // Index (masonry)
 
 @mason_img_bg: #FFFFE8;
@@ -44,13 +46,15 @@
 // Body stuff
 
 @body_link: #FF6600;
-@body_focus: #555555;
-@body_focusbg: @afocus;
 @body_hover: #555;
+@body_focus: @selectioncolor;
+@body_focusbg: @selectionbg;
 
 // Footer
 
 @footertxt: #CCC;
-@footer_hover: @header_nav_hover;
-@footer_focus: #222;
-@footer_focusbg: @afocus;
+@footer_hover: #FFF;
+@footer_focus: @selectioncolor;
+@footer_focusbg: @selectionbg;
+@footer_active: #FFF;
+@footer_activebg: #F60;

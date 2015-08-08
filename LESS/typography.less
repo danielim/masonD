@@ -17,7 +17,8 @@
 body {
     margin: 0;
     font-family: @default_font;
-    line-height: @golden + 0em;
+    font-size: 1.2em;
+    line-height: @golden + 0.2em;
 }
 
 h1 {
@@ -61,39 +62,12 @@ a {
     text-decoration: none;
 }
 
-a:focus {
-    color: @afocus;
-}
-
-img a:focus {
-    color: @afocus;
-}
 
 //header styles
 
 .header_masonD {
 
-    a:link,
-    a:visited {
-        color: @header_nav;
-    }
-
-    a:focus {
-        outline: thin dashed;
-        color: @header_nav_focus;
-    }
-
-    a:active {
-        color: @header_nav_focus;
-    }
-    a:hover {
-        outline: 0;
-        color: @header_nav_focus;
-    }
-    .nav .nav-current a {
-        color: @header_nav_focus;
-    }
-
+    .header_a_color;
 
     h1 {
         .HeaderFont;
@@ -114,13 +88,16 @@ img a:focus {
   .masontitle_masonD {
     .HeaderFont;
     font-size: 1.5em;
-    padding: 0.513em 0;
+    a {
+        display: block;
+        padding: 0 0.5em;
+    }
   }
 
   .date_masonD {
     font-size: 0.8em;
   }
-  .post-meta {
+  .post_meta {
     font-size: 0.8em;
   }
 }
@@ -159,7 +136,7 @@ img a:focus {
 
 // Page / Post.
 
-.article_masonD {
+.post-content {
     .body_a_color;
 }
 
@@ -171,6 +148,10 @@ img a:focus {
     .HeaderFont;
     font-size: 1.2em;
     padding: 0.5em 0;
+}
+
+.posttags_masonD {
+    .body_a_color;
 }
 
 // code
