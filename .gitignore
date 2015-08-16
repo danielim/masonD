@@ -2,3 +2,4 @@ bower_components/**
 compiled_css/**
 node_modules/**
 masonD/assets/css/**
+masonD/assets/js/config.js
