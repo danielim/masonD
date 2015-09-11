@@ -9,10 +9,10 @@
 <main class="main_masonD" role="main">
     <header class="pagetitle_masonD">{{title}}</header>
     <article class="article_masonD {{post_class}}">
-        <section class="post-content">
+        <section class="post-content postcontent_masonD">
             {{content}}
         </section>
-    <p>Last updated in {{ date published at format="MMMM DD, YYYY" }}</p>
+    <p class="publishdate">Last updated in {{ date updated_at format="MMMM DD, YYYY" }}</p>
     </article>
 </main>
 {{/post}}
