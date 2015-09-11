@@ -64,15 +64,15 @@ module.exports = function(grunt) {
         files: [{
           cwd: '<%= ghost_theme_name %>/',  // set working folder / root to copy
           src: '**',           // copy all files and subfolders
-          dest: '<%= ghost_production_directory %>/content/themes/<%= ghost_theme_name %>/',    // destination folder
+          dest: '<%= ghost_directory %>/content/themes/<%= ghost_theme_name %>/',    // destination folder
           expand: true           // required when using cwd
         }]
       }
     },
     
-
-    'ghost_production_directory': '../../public/ghost',
-    'ghost_theme_name': 'masonD',
+    // Edit these lines.
+    'ghost_directory': '../../public/ghost', // Absolute or relative path.
+    'ghost_theme_name': 'masonD', // Name of your theme.
 
   });
 

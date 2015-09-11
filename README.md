@@ -30,4 +30,5 @@ I placed the ghost theme within the directory for easier github maintenance.
 * Compile less: `grunt less`
 * Uglify js: `grunt uglify`
 * Combine and minify css: `grunt cssmin`
+* Copy to ghost directory: `grunt copy`
 
